@@ -1,7 +1,7 @@
 const validator = require('fastest-validator');
 const v = new validator();
 const { Patient } = require('../models');
-// const patients = require('../models/Patient.js')
+// const Patient = require('../models/Patient.js')
 
 const getPatients = (async(req, res) => {
     const patients = await Patient.findAll();
